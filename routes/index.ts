@@ -1,8 +1,12 @@
 import express, { Router } from 'express';
-import register from '../controllers/register';
+import passport from 'passport';
 
-const router: any = Router();
+import { registerPage } from '../controllers/register';
+import { loginPost } from '../controllers/login';
 
-router.get('/', register.registerPage);
+const router:any = Router();
+
+router.get('/', registerPage);
+router.post('/', passport.authenticate('local'), loginPost);
 
 export default router;
