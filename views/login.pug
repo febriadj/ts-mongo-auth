@@ -4,6 +4,8 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="stylesheet", href="auth.css")
     title Auth - Login
   body 
     #auth
@@ -13,4 +15,7 @@ html(lang="en")
         - }
         input(type="text", name="nameOrEmail" placeholder="Masukan Username atau Email" required)
         input(type="password", name="password" placeholder="Masukan Password" required)
-        button(type="submit") Buat Akun 
+        button(type="submit") Login
+        .link
+          p Belum Punya Akun?
+          a(href="/register") Buat Akun Disini

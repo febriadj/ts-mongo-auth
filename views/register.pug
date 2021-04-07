@@ -4,6 +4,8 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel="stylesheet", href="auth.css")
     title Auth - Register
   body 
     #auth
@@ -11,8 +13,11 @@ html(lang="en")
         - if ( message !== undefined ) {
             p.message #{ message }
         - }
-        input(type="text", name="username" placeholder="Masukan Username" requied)
-        input(type="email", name="email" placeholder="Masukan Email" requied)
-        input(type="password", name="password" placeholder="Masukan Password" requied)
-        input(type="password", name="confirmPassword" placeholder="Masukan Password Sekali Lagi" requied)
+        input(type="text", name="username" placeholder="Masukan Username" required)
+        input(type="email", name="email" placeholder="Masukan Email" required)
+        input(type="password", name="password" placeholder="Masukan Password" required)
+        input(type="password", name="confirmPassword" placeholder="Masukan Password Sekali Lagi" required)
         button(type="submit") Buat Akun 
+        .link
+          p Sudah Punya Akun?
+          a(href="/login") Login Disini

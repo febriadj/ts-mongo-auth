@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+$font-body: 'Roboto Mono', monospace;
+
+* { padding: 0; margin: 0; }
+p { line-height: 1.4rem; }
+
+body {
+  font-family: $font-body;
+  font-size: 15px;
+  background-color: #090c10;
+  color: #fff;
+}
+
+#auth {
+  width: 100%;
+  display: flex; justify-content: center;
+  padding: 60px 0;
+  #auth-wrap {
+    width: 320px;
+    display: grid; grid-template-columns: 1fr;
+    padding: 20px;
+    background: #0d1117;
+    input {
+      border: none; outline: none;
+      border-bottom: 1px solid #9d4edd;
+      border-radius: 0;
+      background: transparent;
+      padding: 15px 0;
+      margin: 0 0 20px 0;
+      color: #fff;
+      font-family: $font-body;
+    }
+    input:-webkit-autofill {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: #fff !important;
+    }
+    input::-webkit-input-placeholder {
+      color: #ebcaff;
+    }
+    button {
+      border: none; outline: none;
+      background: #9d4edd;
+      padding: 15px 0;
+      margin: 20px 0 0 0;
+      cursor: pointer;     
+      border-radius: 1rem; 
+      font-family: $font-body;
+      font-weight: bold;
+    }
+    .message {
+      font-size: 0.8rem;
+      margin: 0 0 20px 0;
+    }
+    .link {
+      display: flex; align-items: center;
+      margin: 40px 0 0 0;
+      font-size: 0.8rem;
+      p { margin: 0 10px 0 0; }
+      a { color: #ebcaff; }
+    }
+  }
+}
