@@ -4,7 +4,11 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Auth - Dashboard
+
+    link(rel="stylesheet", href="main.css")
+    title #{ user.username } - Dashboard
   body 
-    #dashboard 
-      #dashboard-wrap
+    #main 
+      #main-wrap
+        h2.username Hi, #{ user.username }
+        p Ini Adalah Halaman Dashboard Kamu
