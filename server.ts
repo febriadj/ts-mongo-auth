@@ -28,6 +28,8 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.set('view engine', 'pug'); // menggunakan pug sebagai template engine
+
 app.use(router); // semua router
 
 passportInit(); // menjalankan passport
