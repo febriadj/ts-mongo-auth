@@ -6,3 +6,11 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Auth - Login
   body 
+    #auth
+      form#auth-wrap(action="/login", method="post")
+        - if ( message !== undefined ) {
+            p.message #{ message }
+        - }
+        input(type="text", name="nameOrEmail" placeholder="Masukan Username atau Email" required)
+        input(type="password", name="password" placeholder="Masukan Password" required)
+        button(type="submit") Buat Akun 
