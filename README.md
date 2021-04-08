@@ -1,4 +1,8 @@
 # TypeScript MongoDb Autentikasi
+![GitHub repo size](https://img.shields.io/github/repo-size/febriadj/tsc-mongo-auth?color=bcb8b1&label=repo%20size&logo=github&style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/febriadj/tsc-mongo-auth?color=bcb8b1&style=for-the-badge)
+<br>
+
 Ini adalah proyek sistem autentikasi saya yang sudah kesekian kali, diproyek ini saya membuat <u>autentikasi</u> pengguna pada lokal strategi menggunakan <u>passport</u> dan <u>passport-local</u> pada aplikasi yang dibuat dengan TypeScript dan Nodejs.
 <br>
 
