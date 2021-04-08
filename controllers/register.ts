@@ -1,4 +1,5 @@
 import Users from '../models/users';
+import bcrypt from 'bcryptjs';
 
 export const registerPage = async (req:any, res:any, next:any) => {
   try {
@@ -61,7 +62,9 @@ export const registerPost = async (req:any, res:any, next:any) => {
       })
     }
 
-    const newUsers = new Users({ username, email, password });
+    const hashPass = await bcrypt.hashSync(password, 10); // meng-enkripsi password pengguna
+    const newUsers = new Users({ username, email, password: hashPass });
+
     await newUsers.save((err, result) => {
       if (err) throw err;
 
