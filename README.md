@@ -24,6 +24,10 @@ Package dan Teknologi yang saya gunakan :
 - [Bcrypt](https://www.npmjs.com/package/bcryptjs) (mengenkripsi password pengguna)
 
 # Menjalankan Aplikasi
-<b>npm start</b> <u>'mengkonversi script ts ke js dan menjalankan aplikasi'<br></u>
-<b>npm run start:dev</b> <u>'menjalankan aplikasi untuk tahap pengembangan'</u> <br>
-<b>npm run build</b> <u>'mengkonversi script ts ke js'<u>
+~~~js
+npm install // menginstall seluruh dependencies
+npm run build // mengkonversi script ts ke js
+
+npm start // mengkonversi script ts ke js dan menjalankan aplikasi
+npm run start:dev // menjalankan aplikasi untuk tahap pengembangan
+~~~
