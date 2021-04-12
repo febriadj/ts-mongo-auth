@@ -13,7 +13,7 @@ export const registerPage = async (req:any, res:any, next:any) => {
     })
   }
   catch (err) {
-    console.log(err);
+    res.status(500).json({ message: 'internal server error' });
   }
 }
 
@@ -72,6 +72,6 @@ export const registerPost = async (req:any, res:any, next:any) => {
     })
   }
   catch(err) {
-    console.log(err);
+    res.status(500).json({ message: 'internal server error' });
   }
 }
