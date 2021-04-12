@@ -10,7 +10,7 @@ export const loginPage = async (req:any, res:any, next:any) => {
     })
   }
   catch(err) {
-    console.log(err);
+    res.status(500).json({ message: 'internal server error' });
   }
 }
 
@@ -20,6 +20,6 @@ export const loginPost = async (req:any, res:any, next:any) => {
     await res.status(301).redirect('/'); // redirect ke halaman dashboard jika sudah berhasil login
   }
   catch(err) {
-    console.log(err);
+    res.status(500).json({ message: 'internal server error' });
   }
 }
